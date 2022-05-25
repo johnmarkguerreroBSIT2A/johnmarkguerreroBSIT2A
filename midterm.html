@@ -12,7 +12,7 @@
                 color: #fffffff;
                 font-size: 14px;
             }
-            #price{
+            .price{
                 color: #008000
                 font-size: 15px;
             }
@@ -21,10 +21,10 @@
             var car = {make :"Toyota", model:"Avanza", registration-date:"10-15-2021"};
             var price = 150000;
             const d = new Date();
-            //getMonth() : Get the month as a number (0-11)
+            //getMonth() : Get the month as a number (1-12)
             const currentMonth = d.getMonth();
             //Sale on December
-            if (currentMonth = 11){
+            if (currentMonth = 12){
                 price = 120000;
             }
             document.getElementById("make").innerHTML = car.make;
@@ -38,7 +38,7 @@
     <body>
         <h1>Car</h1>
         <div>
-            <image alt="car-image" ulr="https://d3ggoe3aghc7um.cloudfront.net/uploads/prices/737/002_737_1645616768292_000.png">
+            <image alt="car-image" href="https://d3ggoe3aghc7um.cloudfront.net/uploads/prices/737/002_737_1645616768292_000.png">
             <p id="make"></p>
             <br>
             <p id="model"></p>
